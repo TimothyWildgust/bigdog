@@ -1,0 +1,16 @@
+.btnPrimary {
+  color: #fff;
+  font-weight: 700;
+  width: 159px;
+  height: 48px;
+  background: #3040c4;
+  cursor: pointer;
+  box-shadow: inset 0 1px rgba(255,255,255,0.1);
+  text-transform: uppercase;
+  font-size: 12px;
+
+  &--white {
+    background-color: #fff;
+    color: #3041c5;
+  }
+}

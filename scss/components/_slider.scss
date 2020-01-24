@@ -1,0 +1,94 @@
+@import '../layout/grid';
+
+.slider {
+  &__block {
+    display: none;
+  }
+
+  &__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  &__head {
+    color: #3142c6;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 5%;
+  }
+
+  &__body {
+    color: #2b292d;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+
+  &__dots-box {
+    display: flex;
+    width: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__dots {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #2b292d;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+
+    &:hover {
+      background-color: #3142c5;
+      opacity: 1;
+    }
+
+    &--active {
+      background-color: #3142c5;
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (min-width: $bp-sm) {
+  .slider {
+    &__head {
+      color: #3142c6;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 30px;
+      margin-top: 5%;
+    }
+
+    &__body {
+      color: #2b292d;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+    }
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
