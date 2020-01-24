@@ -1,6 +1,4 @@
-# You are what you eat - Big Dog Digital Timothy Wildgust
-
-Renamed project as per Github Pages requirement to
+# Timothy Wildgust
 
 ### Prerequisites
 
@@ -14,6 +12,8 @@ You will need the following to install on your computer:
 
 ```
 * git clone
-* cd
-* npm install && gulp watch
+* cd bigdog
+* npm install 
+* gulp style
+* gulp watch
 ```
